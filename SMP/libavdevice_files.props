@@ -18,8 +18,6 @@
     <ClCompile Include="..\libavdevice\version.c" />
     <ClCompile Include="..\libavdevice\file_open.c" />
     <ClCompile Include="..\libavdevice\lavfi.c" />
-    <ClCompile Include="..\libavdevice\sdl2.c" />
-    <ClCompile Include="..\libavdevice\libcdio.c" />
     <ClCompile Include="libavdevice\dshow_wrap.c" />
     <ClCompile Include="libavdevice\dshow_common_wrap.c" />
     <ClCompile Include="libavdevice\dshow_crossbar_wrap.c" />

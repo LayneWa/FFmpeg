@@ -31,5 +31,7 @@ static const FFInputFormat *indev_list[] = {
 #if CONFIG_VFWCAP_INDEV
     &ff_vfwcap_demuxer,
 #endif
+#if  CONFIG_LIBCDIO
     &ff_libcdio_demuxer,
+#endif
     NULL };

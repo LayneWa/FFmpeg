@@ -117,8 +117,6 @@
     <ClCompile Include="libavutil\hwcontext_dxva2_wrap.c" />
     <ClCompile Include="libavutil\hwcontext_qsv_wrap.c" />
     <ClCompile Include="libavutil\hwcontext_stub_wrap.c" />
-    <ClCompile Include="libavutil\hwcontext_vulkan_wrap.c" />
-    <ClCompile Include="libavutil\vulkan_wrap.c" />
     <ClCompile Include="..\libavutil\float_dsp.c">
       <ObjectFileName>$(IntDir)\libavutil_float_dsp.obj</ObjectFileName>
     </ClCompile>
@@ -192,7 +190,6 @@
     <ClInclude Include="..\libavutil\hwcontext_vaapi.h" />
     <ClInclude Include="..\libavutil\hwcontext_videotoolbox.h" />
     <ClInclude Include="..\libavutil\hwcontext_vdpau.h" />
-    <ClInclude Include="..\libavutil\hwcontext_vulkan.h" />
     <ClInclude Include="..\libavutil\iamf.h" />
     <ClInclude Include="..\libavutil\imgutils.h" />
     <ClInclude Include="..\libavutil\intfloat.h" />

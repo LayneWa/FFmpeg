@@ -24,5 +24,7 @@ static const FFOutputFormat *outdev_list[] = {
 #if CONFIG_OPENGL_OUTDEV
     &ff_opengl_muxer,
 #endif
+#if CONFIG_SDL2
     &ff_sdl2_muxer,
+#endif
     NULL };

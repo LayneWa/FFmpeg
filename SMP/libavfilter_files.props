@@ -192,7 +192,6 @@
     <ClCompile Include="..\libavfilter\vf_extractplanes.c" />
     <ClCompile Include="..\libavfilter\vf_alphamerge.c" />
     <ClCompile Include="..\libavfilter\vf_amplify.c" />
-    <ClCompile Include="..\libavfilter\vf_subtitles.c" />
     <ClCompile Include="..\libavfilter\vf_avgblur.c" />
     <ClCompile Include="..\libavfilter\vf_backgroundkey.c" />
     <ClCompile Include="..\libavfilter\bbox.c" />
@@ -255,7 +254,6 @@
     <ClCompile Include="..\libavfilter\vf_weave.c" />
     <ClCompile Include="..\libavfilter\vf_drawbox.c" />
     <ClCompile Include="..\libavfilter\f_drawgraph.c" />
-    <ClCompile Include="..\libavfilter\vf_drawtext.c" />
     <ClCompile Include="..\libavfilter\textutils.c" />
     <ClCompile Include="..\libavfilter\vf_edgedetect.c" />
     <ClCompile Include="..\libavfilter\vf_elbg.c" />

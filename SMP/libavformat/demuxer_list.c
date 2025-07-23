@@ -85,7 +85,9 @@ static const FFInputFormat *demuxer_list[] = {
     &ff_codec2_demuxer,
     &ff_codec2raw_demuxer,
     &ff_concat_demuxer,
+#if CONFIG_DASH_DEMUXER
     &ff_dash_demuxer,
+#endif
     &ff_data_demuxer,
     &ff_daud_demuxer,
     &ff_dcstr_demuxer,
@@ -103,7 +105,9 @@ static const FFInputFormat *demuxer_list[] = {
     &ff_dv_demuxer,
     &ff_dvbsub_demuxer,
     &ff_dvbtxt_demuxer,
+#if CONFIG_DVDVIDEO_DEMUXER
     &ff_dvdvideo_demuxer,
+#endif
     &ff_dxa_demuxer,
     &ff_ea_demuxer,
     &ff_ea_cdata_demuxer,
@@ -149,7 +153,9 @@ static const FFInputFormat *demuxer_list[] = {
     &ff_image2pipe_demuxer,
     &ff_image2_alias_pix_demuxer,
     &ff_image2_brender_pix_demuxer,
+#if CONFIG_IMF_DEMUXER
     &ff_imf_demuxer,
+#endif
     &ff_ingenient_demuxer,
     &ff_ipmovie_demuxer,
     &ff_ipu_demuxer,
@@ -377,6 +383,10 @@ static const FFInputFormat *demuxer_list[] = {
     &ff_image_xbm_pipe_demuxer,
     &ff_image_xpm_pipe_demuxer,
     &ff_image_xwd_pipe_demuxer,
+#if CONFIG_LIBGME_DEMUXER
     &ff_libgme_demuxer,
+#endif
+#if CONFIG_LIBMODPLUG_DEMUXER
     &ff_libmodplug_demuxer,
+#endif
     NULL };

@@ -25,7 +25,9 @@ static const FFCodec *codec_list[] = {
     &ff_a64multi5_encoder,
     &ff_alias_pix_encoder,
     &ff_amv_encoder,
+#if CONFIG_APNG_DECODER
     &ff_apng_encoder,
+#endif
     &ff_asv1_encoder,
     &ff_asv2_encoder,
     &ff_avrp_encoder,
@@ -40,12 +42,18 @@ static const FFCodec *codec_list[] = {
     &ff_dpx_encoder,
     &ff_dvvideo_encoder,
     &ff_dxv_encoder,
+#if CONFIG_EXR_ENCODER
     &ff_exr_encoder,
+#endif
     &ff_ffv1_encoder,
     &ff_ffvhuff_encoder,
     &ff_fits_encoder,
+#if CONFIG_FLASHSV_ENCODER
     &ff_flashsv_encoder,
+#endif
+#if CONFIG_FLASHSV2_ENCODER
     &ff_flashsv2_encoder,
+#endif
     &ff_flv_encoder,
     &ff_gif_encoder,
     &ff_h261_encoder,
@@ -71,7 +79,9 @@ static const FFCodec *codec_list[] = {
     &ff_pgm_encoder,
     &ff_pgmyuv_encoder,
     &ff_phm_encoder,
+#if CONFIG_PNG_ENCODER
     &ff_png_encoder,
+#endif
     &ff_ppm_encoder,
     &ff_prores_encoder,
     &ff_prores_aw_encoder,
@@ -110,10 +120,18 @@ static const FFCodec *codec_list[] = {
     &ff_xwd_encoder,
     &ff_y41p_encoder,
     &ff_yuv4_encoder,
+#if CONFIG_ZLIB_ENCODER
     &ff_zlib_encoder,
+#endif
+#if CONFIG_ZMBV_ENCODER
     &ff_zmbv_encoder,
+#endif
+#if CONFIG_AAC_ENCODER
     &ff_aac_encoder,
+#endif
+#if CONFIG_AC3_ENCODER
     &ff_ac3_encoder,
+#endif
     &ff_ac3_fixed_encoder,
     &ff_alac_encoder,
     &ff_aptx_encoder,
@@ -197,20 +215,44 @@ static const FFCodec *codec_list[] = {
     &ff_ttml_encoder,
     &ff_webvtt_encoder,
     &ff_xsub_encoder,
+#if CONFIG_LIBILBC_ENCODER
     &ff_libilbc_encoder,
+#endif
+#if CONFIG_LIBMP3LAME_ENCODER
     &ff_libmp3lame_encoder,
+#endif
+#if CONFIG_LIBOPUS_ENCODER
     &ff_libopus_encoder,
+#endif
+#if CONFIG_LIBSPEEX_ENCODER
     &ff_libspeex_encoder,
+#endif
+#if CONFIG_LIBTHEORA_ENCODER
     &ff_libtheora_encoder,
+#endif
+#if CONFIG_LIBVORBIS_ENCODER
     &ff_libvorbis_encoder,
+#endif
+#if CONFIG_LIBVPX_VP8_ENCODER
     &ff_libvpx_vp8_encoder,
+#endif
+#if CONFIG_LIBVPX_VP9_ENCODER
     &ff_libvpx_vp9_encoder,
+#endif
     &ff_libx264_encoder,
     &ff_libx264rgb_encoder,
+#if CONFIG_LIBX265_ENCODER
     &ff_libx265_encoder,
+#endif
+#if CONFIG_LIBXVID_ENCODER
     &ff_libxvid_encoder,
+#endif
+#if CONFIG_AAC_MF_ENCODER
     &ff_aac_mf_encoder,
+#endif
+#if CONFIG_AC3_MF_ENCODER
     &ff_ac3_mf_encoder,
+#endif
 #if CONFIG_AV1_NVENC_ENCODER
     &ff_av1_nvenc_encoder,
 #endif
@@ -220,7 +262,9 @@ static const FFCodec *codec_list[] = {
 #if CONFIG_H264_AMF_ENCODER
     &ff_h264_amf_encoder,
 #endif
+#if CONFIG_H264_MF_ENCODER
     &ff_h264_mf_encoder,
+#endif
 #if CONFIG_H264_NVENC_ENCODER
     &ff_h264_nvenc_encoder,
 #endif
@@ -236,7 +280,9 @@ static const FFCodec *codec_list[] = {
 #if CONFIG_HEVC_D3D12VA_ENCODER
     &ff_hevc_d3d12va_encoder,
 #endif
+#if CONFIG_HEVC_MF_ENCODER
     &ff_hevc_mf_encoder,
+#endif
 #if CONFIG_HEVC_NVENC_ENCODER
     &ff_hevc_nvenc_encoder,
 #endif
@@ -249,7 +295,9 @@ static const FFCodec *codec_list[] = {
 #if CONFIG_MJPEG_QSV_ENCODER
     &ff_mjpeg_qsv_encoder,
 #endif
+#if CONFIG_MP3_MF_ENCODER
     &ff_mp3_mf_encoder,
+#endif
 #if CONFIG_MPEG2_QSV_ENCODER
     &ff_mpeg2_qsv_encoder,
 #endif
@@ -265,7 +313,9 @@ static const FFCodec *codec_list[] = {
     &ff_amv_decoder,
     &ff_anm_decoder,
     &ff_ansi_decoder,
+#if CONFIG_APNG_DECODER
     &ff_apng_decoder,
+#endif
     &ff_arbc_decoder,
     &ff_argo_decoder,
     &ff_asv1_decoder,
@@ -306,7 +356,9 @@ static const FFCodec *codec_list[] = {
     &ff_dsicinvideo_decoder,
     &ff_dvaudio_decoder,
     &ff_dvvideo_decoder,
+#if CONFIG_DXA_DECODER
     &ff_dxa_decoder,
+#endif
     &ff_dxtory_decoder,
     &ff_dxv_decoder,
     &ff_eacmv_decoder,
@@ -319,20 +371,28 @@ static const FFCodec *codec_list[] = {
     &ff_eightsvx_fib_decoder,
     &ff_escape124_decoder,
     &ff_escape130_decoder,
+#if CONFIG_EXR_DECODER
     &ff_exr_decoder,
+#endif
     &ff_ffv1_decoder,
     &ff_ffvhuff_decoder,
     &ff_fic_decoder,
     &ff_fits_decoder,
+#if CONFIG_FLASHSV_DECODER
     &ff_flashsv_decoder,
+#endif
+#if CONFIG_FLASHSV2_DECODER
     &ff_flashsv2_decoder,
+#endif
     &ff_flic_decoder,
     &ff_flv_decoder,
     &ff_fmvc_decoder,
     &ff_fourxm_decoder,
     &ff_fraps_decoder,
     &ff_frwu_decoder,
+#if CONFIG_G2M_DECODER
     &ff_g2m_decoder,
+#endif
     &ff_gdv_decoder,
     &ff_gem_decoder,
     &ff_gif_decoder,
@@ -372,7 +432,9 @@ static const FFCodec *codec_list[] = {
     &ff_lagarith_decoder,
     &ff_lead_decoder,
     &ff_loco_decoder,
+#if CONFIG_LSCR_DECODER
     &ff_lscr_decoder,
+#endif
     &ff_m101_decoder,
     &ff_magicyuv_decoder,
     &ff_mdec_decoder,
@@ -391,7 +453,9 @@ static const FFCodec *codec_list[] = {
     &ff_mpeg2_qsv_decoder,
 #endif
     &ff_msa1_decoder,
+#if CONFIG_MSCC_DECODER
     &ff_mscc_decoder,
+#endif
     &ff_msmpeg4v1_decoder,
     &ff_msmpeg4v2_decoder,
     &ff_msmpeg4v3_decoder,
@@ -406,8 +470,12 @@ static const FFCodec *codec_list[] = {
     &ff_mvc1_decoder,
     &ff_mvc2_decoder,
     &ff_mvdv_decoder,
+#if CONFIG_MVHA_DECODER
     &ff_mvha_decoder,
+#endif
+#if CONFIG_MWSC_DECODER
     &ff_mwsc_decoder,
+#endif
     &ff_mxpeg_decoder,
     &ff_notchlc_decoder,
     &ff_nuv_decoder,
@@ -415,7 +483,9 @@ static const FFCodec *codec_list[] = {
     &ff_pam_decoder,
     &ff_pbm_decoder,
     &ff_pcx_decoder,
+#if CONFIG_PDV_DECODER
     &ff_pdv_decoder,
+#endif
     &ff_pfm_decoder,
     &ff_pgm_decoder,
     &ff_pgmyuv_decoder,
@@ -424,7 +494,9 @@ static const FFCodec *codec_list[] = {
     &ff_photocd_decoder,
     &ff_pictor_decoder,
     &ff_pixlet_decoder,
+#if CONFIG_PNG_DECODER
     &ff_png_decoder,
+#endif
     &ff_ppm_decoder,
     &ff_prores_decoder,
     &ff_prosumer_decoder,
@@ -436,13 +508,17 @@ static const FFCodec *codec_list[] = {
     &ff_qtrle_decoder,
     &ff_r10k_decoder,
     &ff_r210_decoder,
+#if CONFIG_RASC_DECODER
     &ff_rasc_decoder,
+#endif
     &ff_rawvideo_decoder,
     &ff_rka_decoder,
     &ff_rl2_decoder,
     &ff_roq_decoder,
     &ff_rpza_decoder,
+#if CONFIG_RSCC_DECODER
     &ff_rscc_decoder,
+#endif
     &ff_rtv1_decoder,
     &ff_rv10_decoder,
     &ff_rv20_decoder,
@@ -451,7 +527,9 @@ static const FFCodec *codec_list[] = {
     &ff_s302m_decoder,
     &ff_sanm_decoder,
     &ff_scpr_decoder,
+#if CONFIG_SCREENPRESSO_DECODER
     &ff_screenpresso_decoder,
+#endif 
     &ff_sga_decoder,
     &ff_sgi_decoder,
     &ff_sgirle_decoder,
@@ -463,14 +541,20 @@ static const FFCodec *codec_list[] = {
     &ff_snow_decoder,
     &ff_sp5x_decoder,
     &ff_speedhq_decoder,
+#if CONFIG_SPEEX_DECODER
     &ff_speex_decoder,
+#endif
+#if CONFIG_SRGC_DECODER
     &ff_srgc_decoder,
+#endif
     &ff_sunrast_decoder,
     &ff_svq1_decoder,
     &ff_svq3_decoder,
     &ff_targa_decoder,
     &ff_targa_y216_decoder,
+#if CONFIG_TDSC_DECODER
     &ff_tdsc_decoder,
+#endif
     &ff_theora_decoder,
     &ff_thp_decoder,
     &ff_tiertexseqvideo_decoder,
@@ -479,7 +563,9 @@ static const FFCodec *codec_list[] = {
     &ff_truemotion1_decoder,
     &ff_truemotion2_decoder,
     &ff_truemotion2rt_decoder,
+#if CONFIG_TSCC_DECODER
     &ff_tscc_decoder,
+#endif
     &ff_tscc2_decoder,
     &ff_txd_decoder,
     &ff_ulti_decoder,
@@ -515,7 +601,9 @@ static const FFCodec *codec_list[] = {
     &ff_vvc_decoder,
     &ff_wbmp_decoder,
     &ff_webp_decoder,
+#if CONFIG_WCMV_DECODER
     &ff_wcmv_decoder,
+#endif
     &ff_wrapped_avframe_decoder,
     &ff_wmv1_decoder,
     &ff_wmv2_decoder,
@@ -534,9 +622,15 @@ static const FFCodec *codec_list[] = {
     &ff_yop_decoder,
     &ff_yuv4_decoder,
     &ff_zero12v_decoder,
+#if CONFIG_ZEROCODEC_DECODER
     &ff_zerocodec_decoder,
+#endif
+#if CONFIG_ZLIB_DECODER
     &ff_zlib_decoder,
+#endif
+#if CONFIG_ZMBV_DECODER
     &ff_zmbv_decoder,
+#endif
     &ff_aac_decoder,
     &ff_aac_fixed_decoder,
     &ff_aac_latm_decoder,
@@ -609,7 +703,9 @@ static const FFCodec *codec_list[] = {
     &ff_msnsiren_decoder,
     &ff_nellymoser_decoder,
     &ff_on2avc_decoder,
+#if CONFIG_OPUS_DECODER
     &ff_opus_decoder,
+#endif
     &ff_osq_decoder,
     &ff_paf_audio_decoder,
     &ff_qcelp_decoder,
@@ -631,7 +727,9 @@ static const FFCodec *codec_list[] = {
     &ff_tta_decoder,
     &ff_twinvq_decoder,
     &ff_vmdaudio_decoder,
+#if CONFIG_LIBVORBIS_ENCODER
     &ff_vorbis_decoder,
+#endif
     &ff_wavarc_decoder,
     &ff_wavpack_decoder,
     &ff_wmalossless_decoder,
@@ -760,12 +858,24 @@ static const FFCodec *codec_list[] = {
     &ff_vplayer_decoder,
     &ff_webvtt_decoder,
     &ff_xsub_decoder,
+#if CONFIG_LIBILBC_DECODER
     &ff_libilbc_decoder,
+#endif
+#if CONFIG_LIBOPUS_DECODER
     &ff_libopus_decoder,
+#endif
+#if CONFIG_LIBSPEEX_DECODER
     &ff_libspeex_decoder,
+#endif
+#if CONFIG_LIBVORBIS_DECODER
     &ff_libvorbis_decoder,
+#endif
+#if CONFIG_LIBVPX_VP8_DECODER
     &ff_libvpx_vp8_decoder,
+#endif
+#if CONFIG_LIBVPX_VP9_DECODER
     &ff_libvpx_vp9_decoder,
+#endif
     &ff_bintext_decoder,
     &ff_xbin_decoder,
     &ff_idf_decoder,

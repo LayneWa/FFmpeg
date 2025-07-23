@@ -530,9 +530,6 @@
     <ClInclude Include="..\libavutil\hwcontext_vdpau.h">
       <Filter>Header Files\libavutil</Filter>
     </ClInclude>
-    <ClInclude Include="..\libavutil\hwcontext_vulkan.h">
-      <Filter>Header Files\libavutil</Filter>
-    </ClInclude>
     <ClInclude Include="..\libavutil\iamf.h">
       <Filter>Header Files\libavutil</Filter>
     </ClInclude>
