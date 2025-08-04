@@ -168,7 +168,9 @@ static const AVFilter *filter_list[] = {
     &ff_vf_alphaextract,
     &ff_vf_alphamerge,
     &ff_vf_amplify,
+#if CONFIG_ASS_FILTER
     &ff_vf_ass,
+#endif
     &ff_vf_atadenoise,
     &ff_vf_avgblur,
     &ff_vf_backgroundkey,
@@ -237,7 +239,9 @@ static const AVFilter *filter_list[] = {
     &ff_vf_drawbox,
     &ff_vf_drawgraph,
     &ff_vf_drawgrid,
+#if CONFIG_DRAWTEXT_FILTER
     &ff_vf_drawtext,
+#endif
     &ff_vf_edgedetect,
     &ff_vf_elbg,
     &ff_vf_entropy,
@@ -414,7 +418,9 @@ static const AVFilter *filter_list[] = {
     &ff_vf_ssim360,
     &ff_vf_stereo3d,
     &ff_vf_streamselect,
+#if CONFIG_SUBTITLES_FILTER
     &ff_vf_subtitles,
+#endif
     &ff_vf_super2xsai,
     &ff_vf_swaprect,
     &ff_vf_swapuv,
